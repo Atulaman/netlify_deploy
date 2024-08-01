@@ -1,0 +1,18 @@
+#version: '3'
+#services:
+#  react:
+#    image: 'react_app:latest'
+ #   ports:
+ #     - "3000:3000"
+ #   environment:
+ #     - REACT_APP_NAME=atul
+ #   container_name: react1000
+version: '3'
+services:
+  react:
+    build: ./
+    container_name: react_sample
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_NAME=atul
